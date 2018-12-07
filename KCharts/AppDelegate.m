@@ -21,6 +21,7 @@
     ViewController *v = [[ViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:v];
     self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

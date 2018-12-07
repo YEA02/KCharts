@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD16EB0D21BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AD16EB0921BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.m */; };
+		AD16EB0E21BA4B3800BAA09D /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD16EB0B21BA4B3800BAA09D /* UIView+SDAutoLayout.m */; };
+		AD16EB1121BA4BE300BAA09D /* ic_survey_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = AD16EB1021BA4BE200BAA09D /* ic_survey_triangle.png */; };
+		AD16EB1C21BA4CF000BAA09D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD16EB1921BA4C9500BAA09D /* Charts.framework */; };
+		AD16EB1D21BA4CF000BAA09D /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD16EB1921BA4C9500BAA09D /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD16EB2221BA4D4300BAA09D /* ExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD16EB2121BA4D4300BAA09D /* ExcelView.m */; };
 		AD2DCC6E21A7F0F8008C28ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCC6D21A7F0F8008C28ED /* AppDelegate.m */; };
 		AD2DCC7121A7F0F8008C28ED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCC7021A7F0F8008C28ED /* ViewController.m */; };
 		AD2DCC7421A7F0F8008C28ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2DCC7221A7F0F8008C28ED /* Main.storyboard */; };
@@ -15,25 +21,35 @@
 		AD2DCC7C21A7F0FC008C28ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCC7B21A7F0FC008C28ED /* main.m */; };
 		AD2DCC8621A7F0FC008C28ED /* KChartsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCC8521A7F0FC008C28ED /* KChartsTests.m */; };
 		AD2DCC9121A7F0FC008C28ED /* KChartsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCC9021A7F0FC008C28ED /* KChartsUITests.m */; };
-		AD2DCCA521A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCA221A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.m */; };
-		AD2DCCA621A7F19A008C28ED /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCA421A7F199008C28ED /* UIView+SDAutoLayout.m */; };
 		AD2DCCA921A7F1C9008C28ED /* QuesResultCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCA821A7F1C9008C28ED /* QuesResultCellView.m */; };
 		AD2DCCAC21A7F204008C28ED /* QuesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCAB21A7F204008C28ED /* QuesModel.m */; };
 		AD2DCCD521A7F263008C28ED /* ChooseChartTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCD421A7F263008C28ED /* ChooseChartTypeView.m */; };
 		AD2DCCD821A7F325008C28ED /* OptionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCD721A7F325008C28ED /* OptionModel.m */; };
 		AD2DCCEB21A7F4B8008C28ED /* bridging-Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCCEA21A7F4B8008C28ED /* bridging-Header.swift */; };
-		AD2DCD3221A7FC74008C28ED /* ContentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCD1C21A7FC74008C28ED /* ContentCollectionViewCell.m */; };
-		AD2DCD3321A7FC74008C28ED /* JContentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCD1E21A7FC74008C28ED /* JContentTableView.m */; };
-		AD2DCD3421A7FC74008C28ED /* JContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCD2021A7FC74008C28ED /* JContentTableViewCell.m */; };
-		AD2DCD3521A7FC74008C28ED /* JoeExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCD2321A7FC74008C28ED /* JoeExcelView.m */; };
-		AD2DCD3621A7FC74008C28ED /* TopCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCD2821A7FC74008C28ED /* TopCollectionView.m */; };
-		AD2DCD3721A7FC74008C28ED /* TopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2DCD2A21A7FC74008C28ED /* TopCollectionViewCell.m */; };
-		AD2DCD3A21A81638008C28ED /* ic_survey_triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2DCD3921A81638008C28ED /* ic_survey_triangle.png */; };
-		AD2DCD3B21A8166A008C28ED /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2DCCE021A7F46B008C28ED /* Charts.framework */; };
-		AD2DCD3C21A8166A008C28ED /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD2DCCE021A7F46B008C28ED /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AD16EB1821BA4C9500BAA09D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD16EB1321BA4C9500BAA09D /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		AD16EB1A21BA4C9500BAA09D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD16EB1321BA4C9500BAA09D /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		AD16EB1E21BA4CF000BAA09D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD16EB1321BA4C9500BAA09D /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 		AD2DCC8221A7F0FC008C28ED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD2DCC6121A7F0F8008C28ED /* Project object */;
@@ -48,27 +64,6 @@
 			remoteGlobalIDString = AD2DCC6821A7F0F8008C28ED;
 			remoteInfo = KCharts;
 		};
-		AD2DCCDF21A7F46B008C28ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD2DCCDA21A7F46B008C28ED /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		AD2DCCE121A7F46B008C28ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD2DCCDA21A7F46B008C28ED /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
-		AD2DCD3D21A8166A008C28ED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD2DCCDA21A7F46B008C28ED /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A58A4ED274A941CA248EA921;
-			remoteInfo = Charts;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,7 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD2DCD3C21A8166A008C28ED /* Charts.framework in Embed Frameworks */,
+				AD16EB1D21BA4CF000BAA09D /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +81,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD16EB0721BA4B3800BAA09D /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		AD16EB0821BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		AD16EB0921BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		AD16EB0A21BA4B3800BAA09D /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		AD16EB0B21BA4B3800BAA09D /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		AD16EB1021BA4BE200BAA09D /* ic_survey_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_survey_triangle.png; sourceTree = "<group>"; };
+		AD16EB1321BA4C9500BAA09D /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		AD16EB2021BA4D4300BAA09D /* ExcelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExcelView.h; sourceTree = "<group>"; };
+		AD16EB2121BA4D4300BAA09D /* ExcelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExcelView.m; sourceTree = "<group>"; };
 		AD2DCC6921A7F0F8008C28ED /* KCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2DCC6C21A7F0F8008C28ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AD2DCC6D21A7F0F8008C28ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,11 +106,6 @@
 		AD2DCC8C21A7F0FC008C28ED /* KChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2DCC9021A7F0FC008C28ED /* KChartsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KChartsUITests.m; sourceTree = "<group>"; };
 		AD2DCC9221A7F0FC008C28ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD2DCCA021A7F199008C28ED /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
-		AD2DCCA121A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
-		AD2DCCA221A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
-		AD2DCCA321A7F199008C28ED /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
-		AD2DCCA421A7F199008C28ED /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		AD2DCCA721A7F1C9008C28ED /* QuesResultCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuesResultCellView.h; sourceTree = "<group>"; };
 		AD2DCCA821A7F1C9008C28ED /* QuesResultCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuesResultCellView.m; sourceTree = "<group>"; };
 		AD2DCCAA21A7F204008C28ED /* QuesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuesModel.h; sourceTree = "<group>"; };
@@ -115,23 +114,8 @@
 		AD2DCCD421A7F263008C28ED /* ChooseChartTypeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseChartTypeView.m; sourceTree = "<group>"; };
 		AD2DCCD621A7F325008C28ED /* OptionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionModel.h; sourceTree = "<group>"; };
 		AD2DCCD721A7F325008C28ED /* OptionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionModel.m; sourceTree = "<group>"; };
-		AD2DCCDA21A7F46B008C28ED /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		AD2DCCE921A7F4B8008C28ED /* KCharts-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KCharts-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD2DCCEA21A7F4B8008C28ED /* bridging-Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "bridging-Header.swift"; sourceTree = "<group>"; };
-		AD2DCD1B21A7FC74008C28ED /* ContentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCollectionViewCell.h; sourceTree = "<group>"; };
-		AD2DCD1C21A7FC74008C28ED /* ContentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCollectionViewCell.m; sourceTree = "<group>"; };
-		AD2DCD1D21A7FC74008C28ED /* JContentTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JContentTableView.h; sourceTree = "<group>"; };
-		AD2DCD1E21A7FC74008C28ED /* JContentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JContentTableView.m; sourceTree = "<group>"; };
-		AD2DCD1F21A7FC74008C28ED /* JContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JContentTableViewCell.h; sourceTree = "<group>"; };
-		AD2DCD2021A7FC74008C28ED /* JContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JContentTableViewCell.m; sourceTree = "<group>"; };
-		AD2DCD2121A7FC74008C28ED /* JoeExcel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoeExcel.h; sourceTree = "<group>"; };
-		AD2DCD2221A7FC74008C28ED /* JoeExcelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoeExcelView.h; sourceTree = "<group>"; };
-		AD2DCD2321A7FC74008C28ED /* JoeExcelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoeExcelView.m; sourceTree = "<group>"; };
-		AD2DCD2721A7FC74008C28ED /* TopCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionView.h; sourceTree = "<group>"; };
-		AD2DCD2821A7FC74008C28ED /* TopCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionView.m; sourceTree = "<group>"; };
-		AD2DCD2921A7FC74008C28ED /* TopCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopCollectionViewCell.h; sourceTree = "<group>"; };
-		AD2DCD2A21A7FC74008C28ED /* TopCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopCollectionViewCell.m; sourceTree = "<group>"; };
-		AD2DCD3921A81638008C28ED /* ic_survey_triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_survey_triangle.png; path = "../../../项目/srdb_iOS/srdb-iphone/srdb-iphone/Image/Topic/ic_survey_triangle.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2DCD3B21A8166A008C28ED /* Charts.framework in Frameworks */,
+				AD16EB1C21BA4CF000BAA09D /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +144,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD16EB0621BA4B3800BAA09D /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AD16EB0721BA4B3800BAA09D /* SDAutoLayout.h */,
+				AD16EB0821BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.h */,
+				AD16EB0921BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.m */,
+				AD16EB0A21BA4B3800BAA09D /* UIView+SDAutoLayout.h */,
+				AD16EB0B21BA4B3800BAA09D /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		AD16EB1221BA4C6500BAA09D /* chartsLib */ = {
+			isa = PBXGroup;
+			children = (
+				AD16EB1321BA4C9500BAA09D /* Charts.xcodeproj */,
+			);
+			name = chartsLib;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		AD16EB1421BA4C9500BAA09D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD16EB1921BA4C9500BAA09D /* Charts.framework */,
+				AD16EB1B21BA4C9500BAA09D /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		AD2DCC6021A7F0F8008C28ED = {
 			isa = PBXGroup;
 			children = (
@@ -183,15 +197,16 @@
 		AD2DCC6B21A7F0F8008C28ED /* KCharts */ = {
 			isa = PBXGroup;
 			children = (
-				AD2DCD1221A7FC74008C28ED /* JoeExcelView */,
-				AD2DCCD921A7F447008C28ED /* chartsLib */,
-				AD2DCC9F21A7F199008C28ED /* SDAutoLayout */,
+				AD16EB0621BA4B3800BAA09D /* SDAutoLayout */,
+				AD16EB1221BA4C6500BAA09D /* chartsLib */,
 				AD2DCC6C21A7F0F8008C28ED /* AppDelegate.h */,
 				AD2DCC6D21A7F0F8008C28ED /* AppDelegate.m */,
 				AD2DCC6F21A7F0F8008C28ED /* ViewController.h */,
 				AD2DCC7021A7F0F8008C28ED /* ViewController.m */,
 				AD2DCCA721A7F1C9008C28ED /* QuesResultCellView.h */,
 				AD2DCCA821A7F1C9008C28ED /* QuesResultCellView.m */,
+				AD16EB2021BA4D4300BAA09D /* ExcelView.h */,
+				AD16EB2121BA4D4300BAA09D /* ExcelView.m */,
 				AD2DCCAA21A7F204008C28ED /* QuesModel.h */,
 				AD2DCCAB21A7F204008C28ED /* QuesModel.m */,
 				AD2DCCD321A7F263008C28ED /* ChooseChartTypeView.h */,
@@ -203,7 +218,7 @@
 				AD2DCC7721A7F0FC008C28ED /* LaunchScreen.storyboard */,
 				AD2DCC7A21A7F0FC008C28ED /* Info.plist */,
 				AD2DCC7B21A7F0FC008C28ED /* main.m */,
-				AD2DCD3921A81638008C28ED /* ic_survey_triangle.png */,
+				AD16EB1021BA4BE200BAA09D /* ic_survey_triangle.png */,
 				AD2DCCEA21A7F4B8008C28ED /* bridging-Header.swift */,
 				AD2DCCE921A7F4B8008C28ED /* KCharts-Bridging-Header.h */,
 			);
@@ -228,73 +243,6 @@
 			path = KChartsUITests;
 			sourceTree = "<group>";
 		};
-		AD2DCC9F21A7F199008C28ED /* SDAutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				AD2DCCA021A7F199008C28ED /* SDAutoLayout.h */,
-				AD2DCCA121A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.h */,
-				AD2DCCA221A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.m */,
-				AD2DCCA321A7F199008C28ED /* UIView+SDAutoLayout.h */,
-				AD2DCCA421A7F199008C28ED /* UIView+SDAutoLayout.m */,
-			);
-			name = SDAutoLayout;
-			path = "../../../项目/srdb_iOS/srdb-iphone/srdb-iphone/SDAutoLayout";
-			sourceTree = "<group>";
-		};
-		AD2DCCD921A7F447008C28ED /* chartsLib */ = {
-			isa = PBXGroup;
-			children = (
-				AD2DCCE321A7F47C008C28ED /* chartsLib */,
-			);
-			path = chartsLib;
-			sourceTree = "<group>";
-		};
-		AD2DCCDB21A7F46B008C28ED /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD2DCCE021A7F46B008C28ED /* Charts.framework */,
-				AD2DCCE221A7F46B008C28ED /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AD2DCCE321A7F47C008C28ED /* chartsLib */ = {
-			isa = PBXGroup;
-			children = (
-				AD2DCCDA21A7F46B008C28ED /* Charts.xcodeproj */,
-			);
-			name = chartsLib;
-			sourceTree = "<group>";
-		};
-		AD2DCD1221A7FC74008C28ED /* JoeExcelView */ = {
-			isa = PBXGroup;
-			children = (
-				AD2DCD1321A7FC74008C28ED /* JoeExcelView */,
-			);
-			name = JoeExcelView;
-			path = ../../../../Downloads/JoeExcelView;
-			sourceTree = "<group>";
-		};
-		AD2DCD1321A7FC74008C28ED /* JoeExcelView */ = {
-			isa = PBXGroup;
-			children = (
-				AD2DCD1B21A7FC74008C28ED /* ContentCollectionViewCell.h */,
-				AD2DCD1C21A7FC74008C28ED /* ContentCollectionViewCell.m */,
-				AD2DCD1D21A7FC74008C28ED /* JContentTableView.h */,
-				AD2DCD1E21A7FC74008C28ED /* JContentTableView.m */,
-				AD2DCD1F21A7FC74008C28ED /* JContentTableViewCell.h */,
-				AD2DCD2021A7FC74008C28ED /* JContentTableViewCell.m */,
-				AD2DCD2121A7FC74008C28ED /* JoeExcel.h */,
-				AD2DCD2221A7FC74008C28ED /* JoeExcelView.h */,
-				AD2DCD2321A7FC74008C28ED /* JoeExcelView.m */,
-				AD2DCD2721A7FC74008C28ED /* TopCollectionView.h */,
-				AD2DCD2821A7FC74008C28ED /* TopCollectionView.m */,
-				AD2DCD2921A7FC74008C28ED /* TopCollectionViewCell.h */,
-				AD2DCD2A21A7FC74008C28ED /* TopCollectionViewCell.m */,
-			);
-			path = JoeExcelView;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -310,7 +258,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				AD2DCD3E21A8166A008C28ED /* PBXTargetDependency */,
+				AD16EB1F21BA4CF000BAA09D /* PBXTargetDependency */,
 			);
 			name = KCharts;
 			productName = KCharts;
@@ -389,8 +337,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AD2DCCDB21A7F46B008C28ED /* Products */;
-					ProjectRef = AD2DCCDA21A7F46B008C28ED /* Charts.xcodeproj */;
+					ProductGroup = AD16EB1421BA4C9500BAA09D /* Products */;
+					ProjectRef = AD16EB1321BA4C9500BAA09D /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -403,18 +351,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AD2DCCE021A7F46B008C28ED /* Charts.framework */ = {
+		AD16EB1921BA4C9500BAA09D /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = AD2DCCDF21A7F46B008C28ED /* PBXContainerItemProxy */;
+			remoteRef = AD16EB1821BA4C9500BAA09D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AD2DCCE221A7F46B008C28ED /* ChartsTests.xctest */ = {
+		AD16EB1B21BA4C9500BAA09D /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = AD2DCCE121A7F46B008C28ED /* PBXContainerItemProxy */;
+			remoteRef = AD16EB1A21BA4C9500BAA09D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -425,9 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2DCC7921A7F0FC008C28ED /* LaunchScreen.storyboard in Resources */,
+				AD16EB1121BA4BE300BAA09D /* ic_survey_triangle.png in Resources */,
 				AD2DCC7621A7F0FC008C28ED /* Assets.xcassets in Resources */,
 				AD2DCC7421A7F0F8008C28ED /* Main.storyboard in Resources */,
-				AD2DCD3A21A81638008C28ED /* ic_survey_triangle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,20 +400,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2DCD3321A7FC74008C28ED /* JContentTableView.m in Sources */,
 				AD2DCC7121A7F0F8008C28ED /* ViewController.m in Sources */,
 				AD2DCC7C21A7F0FC008C28ED /* main.m in Sources */,
 				AD2DCCD821A7F325008C28ED /* OptionModel.m in Sources */,
-				AD2DCCA521A7F199008C28ED /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
-				AD2DCD3221A7FC74008C28ED /* ContentCollectionViewCell.m in Sources */,
-				AD2DCD3621A7FC74008C28ED /* TopCollectionView.m in Sources */,
-				AD2DCD3721A7FC74008C28ED /* TopCollectionViewCell.m in Sources */,
 				AD2DCC6E21A7F0F8008C28ED /* AppDelegate.m in Sources */,
-				AD2DCD3521A7FC74008C28ED /* JoeExcelView.m in Sources */,
+				AD16EB2221BA4D4300BAA09D /* ExcelView.m in Sources */,
+				AD16EB0D21BA4B3800BAA09D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				AD2DCCD521A7F263008C28ED /* ChooseChartTypeView.m in Sources */,
 				AD2DCCEB21A7F4B8008C28ED /* bridging-Header.swift in Sources */,
-				AD2DCD3421A7FC74008C28ED /* JContentTableViewCell.m in Sources */,
-				AD2DCCA621A7F19A008C28ED /* UIView+SDAutoLayout.m in Sources */,
+				AD16EB0E21BA4B3800BAA09D /* UIView+SDAutoLayout.m in Sources */,
 				AD2DCCAC21A7F204008C28ED /* QuesModel.m in Sources */,
 				AD2DCCA921A7F1C9008C28ED /* QuesResultCellView.m in Sources */,
 			);
@@ -490,6 +433,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AD16EB1F21BA4CF000BAA09D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = AD16EB1E21BA4CF000BAA09D /* PBXContainerItemProxy */;
+		};
 		AD2DCC8321A7F0FC008C28ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AD2DCC6821A7F0F8008C28ED /* KCharts */;
@@ -499,11 +447,6 @@
 			isa = PBXTargetDependency;
 			target = AD2DCC6821A7F0F8008C28ED /* KCharts */;
 			targetProxy = AD2DCC8D21A7F0FC008C28ED /* PBXContainerItemProxy */;
-		};
-		AD2DCD3E21A8166A008C28ED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = AD2DCD3D21A8166A008C28ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

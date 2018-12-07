@@ -7,14 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "UIView+SDAutoLayout.h"
+//#import "UIView+SDAutoLayout.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 #import "QuesResultCellView.h"
 #import "OptionModel.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,changeChartDelegate>
 
-@property (nonatomic, strong) UIScrollView *allView;
 @property (nonatomic, strong) NSMutableArray *quesArray;
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) QuesModel *quesModel;
@@ -31,53 +30,28 @@
     
     [self getStatistics];
     [self createUI];
-    
 }
 
 - (void)createUI {
-    self.allView = [[UIScrollView alloc] init];
-    self.allView.showsVerticalScrollIndicator = NO;
-    [self.view addSubview:self.allView];
     
-    UIView *vie = [[UIView alloc] init];
+    UIView *vie = [[UIView alloc] initWithFrame:CGRectMake(10, 15, self.view.frame.size.width - 20, 45)];
     vie.backgroundColor = [UIColor whiteColor];
-    vie.layer.cornerRadius = 4.0;
-    [self.allView addSubview:vie];
+    [self.view addSubview:vie];
     
-    UITextField *textView1 = [[UITextField alloc] init];
+    UILabel *textView1 = [[UILabel alloc] initWithFrame:CGRectMake(15, 10, self.view.frame.size.width - 15, 25)];
     textView1.text = @"问卷名称：这是一个选择题";
     [vie addSubview:textView1];
     
-    self.tableView = [[UITableView alloc] init];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(10, 0, self.view.frame.size.width - 20, self.view.frame.size.height)];
+    self.tableView.tableHeaderView = vie;
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.showsVerticalScrollIndicator = NO;
     self.tableView.tableFooterView = [[UIView alloc] init];
-    self.tableView.scrollEnabled = NO;
-    [self.allView addSubview:self.tableView];
+    [self.view addSubview:self.tableView];
     
-    self.allView.sd_layout.spaceToSuperView(UIEdgeInsetsZero);
-    
-    vie.sd_layout
-    .leftSpaceToView(self.allView, 10)
-    .rightSpaceToView(self.allView, 10)
-    .topSpaceToView(self.allView, 15)
-    .heightIs(45);
-    
-    textView1.sd_layout
-    .leftSpaceToView(vie, 15)
-    .rightSpaceToView(vie, 0)
-    .topSpaceToView(vie, 10)
-    .heightIs(25);
-    
-    self.tableView.sd_layout
-    .leftSpaceToView(self.allView, 10)
-    .rightSpaceToView(self.allView, 10)
-    .topSpaceToView(vie, 5)
-    .heightIs(630 * self.quesArray.count);
-    
-    [self.allView setupAutoHeightWithBottomView:self.tableView bottomMargin:5];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -100,7 +74,18 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 630;
+    NSLog(@"%f",[tableView cellHeightForIndexPath:indexPath model:self.quesArray[indexPath.row] keyPath:@"model" cellClass:[QuesResultCellView class] contentViewWidth:[self cellContentViewWith]]);
+    return 580;
+    
+}
+
+- (CGFloat)cellContentViewWith {
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    // 适配ios7
+    if ([UIApplication sharedApplication].statusBarOrientation != UIInterfaceOrientationPortrait && [[UIDevice currentDevice].systemVersion floatValue] < 8) {
+        width = [UIScreen mainScreen].bounds.size.height;
+    }
+    return width;
 }
 
 -(void)changeChart:(QuesResultCellView *)cell andType:(NSUInteger)i {
@@ -172,7 +157,5 @@
     [self.quesArray addObject:quesModell];
     
 }
-
-
 
 @end

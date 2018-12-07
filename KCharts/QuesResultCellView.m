@@ -10,15 +10,15 @@
 #import "UIView+SDAutoLayout.h"
 #import "KCharts-Bridging-Header.h"
 #import "OptionModel.h"
-#import "JoeExcelView.h"
 #import "ChooseChartTypeView.h"
+#import "ExcelView.h"
 
 @interface QuesResultCellView () <ChartViewDelegate,ChooseChartTypeDelegate>
 
 @property (nonatomic, strong) UIView *allView;
 @property (nonatomic, strong) UILabel *numberLabel;
 @property (nonatomic, strong) UILabel *nameLabel;
-@property (nonatomic, strong) JoeExcelView *joeExcelView;// 表格
+@property (nonatomic, strong) ExcelView *excelView;// 表格
 @property (nonatomic, strong) BarChartView *barChartView;// 柱状图
 @property (nonatomic, strong) PieChartView *pieChartView;// 饼状图
 @property (nonatomic, strong) RadarChartView *radarChartView;// 网状图
@@ -70,14 +70,12 @@
     
     self.allView = [[UIView alloc] init];
     self.allView.backgroundColor = [UIColor whiteColor];
-    self.allView.layer.cornerRadius = 4.0;
     [self.contentView addSubview:self.allView];
     
     self.allView.sd_layout
     .leftSpaceToView(self.contentView, 0)
     .rightSpaceToView(self.contentView, 0)
-    .topSpaceToView(self.contentView, 0)
-    .autoHeightRatio(0);
+    .topSpaceToView(self.contentView, 0);
     
 }
 
@@ -176,7 +174,6 @@
 
 - (void)setModel:(QuesModel *)model{
     
-    
     for (int i=0;i<model.optionsArray.count;i++) {
         OptionModel *optionModel = [[OptionModel alloc] init];
         optionModel = model.optionsArray[i];
@@ -186,7 +183,6 @@
         [self.resultAllArray addObject:optionModel.optionCount];
         [self.resultAllArray addObject:optionModel.optionPercentage];
     }
-    
     
     //题号标签
     self.numberLabel = [[UILabel alloc] init];
@@ -202,8 +198,8 @@
     self.nameLabel.text = model.quesTitle;
     
     // 选项表
-    self.joeExcelView = [[JoeExcelView alloc] initWithFrame:CGRectMake(10, 120, 400, 0) andNameArr:self.resultnNameArray andContentArr:self.resultAllArray];
-    [self.allView addSubview:self.joeExcelView];
+    self.excelView = [[ExcelView alloc] initWithFrame:CGRectMake(10, 120, 350, 0) andTitleArray:self.resultnNameArray andNumArr:self.resultAllArray];
+    [self.allView addSubview:self.excelView];
     
     // 图表样式
     self.targetBtn = [[UIButton alloc] init];
@@ -243,20 +239,21 @@
     .autoHeightRatio(0);
     
     // 表格
-    self.joeExcelView.sd_layout
+    self.excelView.sd_layout
     .leftSpaceToView(self.allView, 20)
     .rightSpaceToView(self.allView, 20)
-    .topSpaceToView(self.nameLabel, 20);
+    .topSpaceToView(self.nameLabel, 20)
+    .heightIs(self.excelView.frame.size.height);
     
     triangleImg.sd_layout
     .rightSpaceToView(self.allView, 25)
-    .topSpaceToView(self.joeExcelView, 23)
+    .topSpaceToView(self.excelView, 23)
     .widthIs(5)
     .heightIs(5);
     
     self.targetBtn.sd_layout
     .rightSpaceToView(triangleImg, 5)
-    .topSpaceToView(self.joeExcelView, 5)
+    .topSpaceToView(self.excelView, 5)
     .widthIs(50)
     .heightIs(25);
     
@@ -264,42 +261,37 @@
         // 柱状图
         self.barChartView.sd_layout
         .leftSpaceToView(self.allView, 15)
-        .rightSpaceToView(self.allView, 20)
+        .rightEqualToView(self.excelView)
         .heightIs(350)
         .topSpaceToView(self.targetBtn, 8);
 
-        [self.allView setupAutoHeightWithBottomView:self.barChartView bottomMargin:15];
-        [self setupAutoHeightWithBottomView:self.allView bottomMargin:0];
+        [self.allView setupAutoHeightWithBottomView:self.barChartView bottomMargin:5];
         
-        [self.joeExcelView reloadData];
         self.barChartView.data = [self setdata];
     } else if (model.Charttype == 2) {
         // 饼状图
         self.pieChartView.sd_layout
         .leftSpaceToView(self.allView, 15)
-        .rightEqualToView(self.joeExcelView)
+        .rightEqualToView(self.excelView)
         .heightIs(350)
         .topSpaceToView(self.targetBtn, 8);
         
-        [self.allView setupAutoHeightWithBottomView:self.pieChartView bottomMargin:15];
-        [self setupAutoHeightWithBottomView:self.allView bottomMargin:0];
-        
-        [self.joeExcelView reloadData];
+        [self.allView setupAutoHeightWithBottomView:self.pieChartView bottomMargin:5];
+      
         self.pieChartView.data = [self setData];
     } else {
         // 网状图
         self.radarChartView.sd_layout
         .leftSpaceToView(self.allView, 15)
-        .rightEqualToView(self.joeExcelView)
+        .rightEqualToView(self.excelView)
         .heightIs(350)
         .topSpaceToView(self.targetBtn, 8);
         
-        [self.allView setupAutoHeightWithBottomView:self.radarChartView bottomMargin:15];
-        [self setupAutoHeightWithBottomView:self.allView bottomMargin:15];
+        [self.allView setupAutoHeightWithBottomView:self.radarChartView bottomMargin:5];
         
-        [self.joeExcelView reloadData];
         self.radarChartView.data = [self setRadarData];
     }
+     [self setupAutoHeightWithBottomView:self.allView bottomMargin:0];
         
 }
 
@@ -417,7 +409,7 @@
         [self.allView addSubview:self.chooseChartTypeView];
         self.chooseChartTypeView.sd_layout
         .rightSpaceToView(self.allView, 46)
-        .topSpaceToView(self.joeExcelView, 10) 
+        .topSpaceToView(self.excelView, 10)
         .widthIs(50)
         .heightIs(90);
         

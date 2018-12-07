@@ -42,8 +42,7 @@
             bg.userInteractionEnabled = YES;
             [bg addGestureRecognizer:recognizer];
             [self addSubview:bg];
-            
-            
+                        
             // 文字
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 60, 25)];
             label.text = [self.titleArray objectAtIndex:i];
