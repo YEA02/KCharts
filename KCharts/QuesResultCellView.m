@@ -174,6 +174,11 @@
 
 - (void)setModel:(QuesModel *)model{
     
+    [self.resultAllArray removeAllObjects];
+    [self.resultCountArray removeAllObjects];
+    [self.resultnNameArray removeAllObjects];
+    [self.resultPercentageArray removeAllObjects];
+    
     for (int i=0;i<model.optionsArray.count;i++) {
         OptionModel *optionModel = [[OptionModel alloc] init];
         optionModel = model.optionsArray[i];
@@ -244,7 +249,7 @@
     .rightSpaceToView(self.allView, 20)
     .topSpaceToView(self.nameLabel, 20)
     .heightIs(self.excelView.frame.size.height);
-    
+    NSLog(@"%f",self.excelView.frame.size.height);
     triangleImg.sd_layout
     .rightSpaceToView(self.allView, 25)
     .topSpaceToView(self.excelView, 23)
@@ -264,9 +269,7 @@
         .rightEqualToView(self.excelView)
         .heightIs(350)
         .topSpaceToView(self.targetBtn, 8);
-
         [self.allView setupAutoHeightWithBottomView:self.barChartView bottomMargin:5];
-        
         self.barChartView.data = [self setdata];
     } else if (model.Charttype == 2) {
         // 饼状图
@@ -291,6 +294,7 @@
         
         self.radarChartView.data = [self setRadarData];
     }
+     NSLog(@"%lf",self.allView.frame.size.height);
      [self setupAutoHeightWithBottomView:self.allView bottomMargin:0];
         
 }

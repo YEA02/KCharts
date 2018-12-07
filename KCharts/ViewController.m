@@ -74,8 +74,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%f",[tableView cellHeightForIndexPath:indexPath model:self.quesArray[indexPath.row] keyPath:@"model" cellClass:[QuesResultCellView class] contentViewWidth:[self cellContentViewWith]]);
-    return 580;
+//    NSLog(@"%f",[tableView cellHeightForIndexPath:indexPath model:self.quesArray[indexPath.row] keyPath:@"model" cellClass:[QuesResultCellView class] contentViewWidth:[self cellContentViewWith]]);
+//    return 580;
+    return [tableView cellHeightForIndexPath:indexPath model:self.quesArray[indexPath.row] keyPath:@"model" cellClass:[QuesResultCellView class] contentViewWidth:[self cellContentViewWith]];
     
 }
 
